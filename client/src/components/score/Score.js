@@ -25,11 +25,12 @@ const Score = () => {
 	const { isTimeOut } = useContext(GameStateContext);
 
 	useKeypress((e) => {
+		e = e.key.toLowerCase();
 		if (currentWord && !isTimeOut) {
 			// if the key is the first letter of the current word, or if the substring exists and the key is the first letter...
-			if (!substring && e.key === currentWord[0]) {
+			if (!substring && e === currentWord[0]) {
 				setScore(score + 10);
-			} else if (substring && e.key === substring[0]) {
+			} else if (substring && e === substring[0]) {
 				setScore(score + 10);
 			} else {
 				setScore(score - 10);

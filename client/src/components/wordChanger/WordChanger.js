@@ -49,20 +49,21 @@ const WordChanger = () => {
 	};
 
 	useKeypress((e) => {
+		e = e.key.toLowerCase();
 		if (currentWord && !isTimeOut) {
 			// if a substring has been created (after a first character has been typed)
 			if (substring) {
 				// if it's the last character and the right letter...
-				if (e.key === substring[0] && substring.length === 1) {
+				if (e === substring[0] && substring.length === 1) {
 					changeCurrentWord();
 					// elif it's the right letter...
-				} else if (e.key === substring[0]) {
+				} else if (e === substring[0]) {
 					setSubstring(substring.slice(1, currentWord.length));
 					// if it's the wrong letter
 				} else {
 					changeCurrentWord();
 				}
-			} else if (e.key === currentWord[0]) {
+			} else if (e === currentWord[0]) {
 				// if it's the right character of the first letter, set the substring
 				setSubstring(currentWord.slice(1, currentWord.length));
 			} else {
