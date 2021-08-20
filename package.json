@@ -1,0 +1,33 @@
+{
+  "name": "typing-blitz",
+  "version": "1.0.0",
+  "description": "backend for Typing Blitz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aemann2/typing-blitz.git"
+  },
+  "author": "Adam Mann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aemann2/typing-blitz/issues"
+  },
+  "homepage": "https://github.com/aemann2/typing-blitz#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,10 @@
+.score {
+  order: 2;
+  font-size: 7rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .score {
+    font-size: 5rem;
+  }
+}

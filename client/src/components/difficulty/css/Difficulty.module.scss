@@ -1,0 +1,48 @@
+@import '../../../App.scss';
+
+.difficulty {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 3rem;
+	align-self: flex-start;
+}
+
+.button {
+	border: 5px solid $highlight;
+	background-color: $gray-black;
+	color: $white;
+	font-size: 4rem;
+	margin-bottom: 2rem;
+	padding: 1rem 2rem;
+	transition: color 0.2s ease-in-out;
+
+	&:hover {
+		color: $red;
+	}
+}
+
+@media only screen and (max-width: 1650px) {
+	.button {
+		font-size: 3rem;
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.button {
+		font-size: 2rem;
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.difficulty {
+		right: 1.5rem;
+		bottom: 10%;
+	}
+}
+
+// fade out:
+// https://dev.to/virtualkirill/animate-mounts-and-unmounts-in-react-with-use-animate-presence-1akm
+// https://www.npmjs.com/package/use-animate-presence

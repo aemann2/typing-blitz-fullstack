@@ -1,0 +1,92 @@
+@import 'custom';
+
+// Variables //
+$white: #fffef5;
+$gray-black: #313131;
+$highlight: #ffcb13;
+$red: #ff8484;
+$opaque-red: #ff84848e;
+
+/* Globals */
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 100%;
+	font-family: 'Roboto Mono', monospace;
+	color: $white;
+	background-color: $gray-black;
+	min-width: 800px;
+	// keeps absolute positioned elements from sliding below min-width
+	position: relative;
+	overflow: hidden;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+mark {
+	background-color: transparent;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+.centerWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2rem;
+	order: 1;
+}
+
+@media only screen and (max-width: 1650px) {
+	.centerWrapper {
+		margin-top: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.centerWrapper {
+		margin-top: 4rem;
+	}
+}
+
+// a quick & dirty way of detecting mobile
+@media (hover: none) {
+	main {
+		display: none;
+	}
+	body::after {
+		height: 100vh;
+		width: 100vw;
+		max-width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 5vw;
+		text-align: center;
+		padding: 1rem;
+		content: 'Please use a non-mobile device to play this typing game!';
+	}
+}

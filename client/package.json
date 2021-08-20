@@ -1,0 +1,49 @@
+{
+	"name": "typing-game",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"framer-motion": "^4.1.17",
+		"random-words": "^1.1.1",
+		"react": "^17.0.2",
+		"react-compound-timer": "^1.2.0",
+		"react-dom": "^17.0.2",
+		"react-highlight-regex": "^0.1.1",
+		"react-scripts": "4.0.3",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"sass": "^1.32.13",
+		"sass-loader": "^10.1.1",
+		"webpack": "^4.44.2"
+	},
+	"__comment": "for any unknown request that comes in to the frontend, it gets routed to localhost:5000 (aka, the server) to handle. see here: https://create-react-app.dev/docs/proxying-api-requests-in-development/",
+	"proxy": "http://localhost:5000"
+}
