@@ -52,9 +52,9 @@ const Countdown = () => {
 	return (
 		<motion.div variants={timerVariants} initial='hidden' animate='show'>
 			<Timer
-				initialTime={30000}
+				// initialTime={30000}
 				// testing timer
-				// initialTime={5000}
+				initialTime={5000}
 				ref={timer}
 				startImmediately={false}
 				lastUnit='s'
