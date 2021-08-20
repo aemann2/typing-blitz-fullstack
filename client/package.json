@@ -40,9 +40,9 @@
 		]
 	},
 	"devDependencies": {
-		"sass": "^1.32.13",
-		"sass-loader": "^10.1.1",
-		"webpack": "^4.44.2"
+		"sass": "^1.38.0",
+		"sass-loader": "^10.2.0",
+		"webpack": "^4.46.0"
 	},
 	"__comment": "for any unknown request that comes in to the frontend, it gets routed to localhost:5000 (aka, the server) to handle. see here: https://create-react-app.dev/docs/proxying-api-requests-in-development/",
 	"proxy": "http://localhost:5000"
