@@ -1,14 +1,12 @@
-# [Typing Blitz](https://typing-blitz.netlify.app/)
+# [Typing Blitz](https://typing-blitz.herokuapp.com/)
 
-<a href="https://typing-blitz.netlify.app/" target="_blank"><img src='https://user-images.githubusercontent.com/68879246/119298559-1c96a500-bc12-11eb-8c77-ec40e70d1b9d.png' alt='React Super Store'></a>
+<a href="https://typing-blitz.herokuapp.com/" target="_blank"><img src='https://user-images.githubusercontent.com/68879246/119298559-1c96a500-bc12-11eb-8c77-ec40e70d1b9d.png' alt='Typing Blitz'></a>
 
-**Typing Blitz** is an arcade-style typing game built using React and React Bootstrap. The game generates random words using the [random-words](https://www.npmjs.com/package/random-words) library.
-
-The next step of the project is to add a scoreboard using a database that keeps track of users' scores. More animations coming as well...stay tuned!
+**Typing Blitz** is a full-stack, arcade-style typing game built using MERN stack. The game generates random words using the [random-words](https://www.npmjs.com/package/random-words) library.
 
 ## Technology:
 
-React, React Bootstrap, CSS Modules, random-words, react-compound-timer, react-highlight-regex, Context API w/ Hooks, SASS/BEM, Netlify
+React, CSS Modules, Framer Motion, random-words, react-compound-timer, react-highlight-regex, Context API w/ Hooks, SASS/BEM, Node/Express, MongoDB, Heroku
 
 ## What I learned or used for the first time
 
@@ -20,6 +18,7 @@ React, React Bootstrap, CSS Modules, random-words, react-compound-timer, react-h
 - A custom React hook
 - Modularized helper functions (i.e., a utils folder)
 - The useRef hook to grab a DOM element
+- Express/Node and Mongo in a public project
 
 # Getting Started with Create React App
 
